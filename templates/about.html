@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <title>Tweebuzz | Whats buzzing around your twitter world?</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+        <style>
+            body {
+                background-image: url('../static/img/bkgrnd2.jpg');
+                background-attachment: fixed;
+                background-size: 100%;
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+        </style>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap-responsive.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Tweebuzz</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="/">Home</a></li>
+                            <li class="active"><a href="about/">About</a></li>
+                            <!-- <li><a href="#contact">Contact</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Main hero unit for a primary marketing message or call to action -->
+            <div class="hero-unit">
+                <img src="{{url_for('static', filename='img/tweebuzz.png')}}" width="400px"/>
+                <h3>Whats buzzing in your twitter world?</h3>
+                <p></p>
+                <span id="notifier">* Please ensure that you can access twitter on your network.</span>
+            </div>
+
+            <div class="topic">
+                <div class="topicDesc">
+                    <h3>What is Tweebuzz?</h3>
+                    You must have heard about "World trends", "India trends" and more localized trends right? But do you really care about these trending topics? Most of these topics dont really reveal whats happening around you. Besides, these tweets are clustered based on geolocation. But your "interests" might be spread across the globe.
+                    <p/>
+                    <br />
+                    Well, you see, thats where Tweebuzz comes in. It is an application that aims to provide a personalized trending list. As the saying goes, "Tell me your friends and I'll tell you who are!". Instead of considering tweets from a geolocation, wouldnt it be more intuitive to look at your friends' tweets and find out the whats trending?  Well, thats exactly what I've done, plus some extra graph theoritic masala to go with it.
+                </div>
+            </div>
+
+            <div class="topic">
+                <div class="topicDesc">
+                    <h3>How does it work?</h3>
+                    Lets keep it simple, shall we? On an abstract scale, I use oAuth to get access to your twitter account. Dont worry, this app cannot steal your password. Once you've authorized the app, it just samples your followers' list. For each of those followers, we retrieve the top few tweets. Well, people put all kinds of crazy stuff in there. So, we'll just have remove those punctuations and stopwords. Oh.. and lets not forget the smileys. ;) Next, I extract the mentions and hashtags and keep it aside. For the remaining corpus, a simple term frequency analysis should work right? well, not really. Let me take an example. Lets assume you have your internals next week. Some would use "exam", and some "test" in their tweets. But wait.. dont they logically mean the same? Thats exactly why a simple term frequency vector doesnt work. To get around this problem, I've used nltk synset feature to obtain the similar words. Next, I build a graph by iterating through the word corpus, with similar words connected by an edge. I run a fairly sophisticated algorithm on the obtained graph to quantify the extent to which a word is trending.
+                </div>
+            </div>
+
+            <div class="topic">
+                <div class="topicDesc">
+                    <h3>Who am I?</h3>
+                    I'm <a href="http://www.twitter.com/mvvijesh" target="_new">@mvvijesh</a> on Twitter, <a href="http://facebook.com/mv.vijesh" target="_new">Vijesh Mohan</a> and <a href="mailto:mv.vijesh@gmail.com" target="_new">Vijesh</a> on gmail.
+                </div>
+            </div>
+
+            <!-- <div class="topic">
+                <div class="topicDesc">
+                    <h3>Topic Name</h3>
+                    Description
+                </div>
+            </div> -->
+
+            <hr>
+            <footer>
+                <p><img src="{{url_for('static', filename='img/copyleft.png')}}" width="15px" /> CopyLeft Vijesh M, 2012</p>
+            </footer>
+
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"></script>
+        <script>window.jQuery || document.write("<script src='{{url_for('static', filename='js/vendor/jquery-1.8.2.js')}}'><\/script>")</script>
+        <script src="{{url_for('static', filename='js/vendor/bootstrap.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/main.js')}}"></script>
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+
+            function about()
+            {
+                $.ajax({
+                    url: "about/",
+                    type: "GET",
+                    success: function(page)
+                    {
+                        alert(page);
+                    },
+                    error: function()
+                    {
+                        alert("error");
+                    }
+                });
+            }
+
+            function authorizeApp()
+            {
+                var message = "";
+            
+                $.ajax({
+                    url:    "authorize/",
+                    type:   "GET",
+                    success:    function(authUrl){
+                                message = "Please authorize this application by visiting this <a href='" + authUrl +"' target='_new'>link</a>. You will be receiving a 7-character code after you have authorized the app. Please enter the code in the following box.<br /><input id='authCode' class='span2' type='text' placeholder='7-char authorization code goes here' /><p /><p><a id='continue' class='btn' onclick='getLocalTrends();' >Get Local Trends</a></p>";
+
+                                $("#step1Desc").html(message);
+                                $("#authCodeTab").css({display: "block"});
+                                },
+                    error:      function(errorMsg){
+                                message = "We were not able to process the request. Please try again."
+                                }
+                        });
+                $("#step1Desc").html("<img src='{{url_for('static', filename='img/th_loading6.gif')}}' class='loadingImg' width='30px' />");
+            }
+
+            function showTwitterHandle()
+            {
+                var message;
+                var authCode = $("#authCode").val();
+                $("#step2Desc").html("<img src='{{url_for('static', filename='img/th_loading6.gif')}}' class='loadingImg' />");
+                $.ajax({
+                        url: "confirm/",
+                        type: "GET",
+                        data: {"authCode" : authCode}, //send the authorization code somehow
+                        success: function(){
+                                        $("#twitterHandleTab").css({display: "block"});
+                                    },
+                        error: function(){
+                                    $("#step2Desc").html("something went wrong.. please ensure that you can access the twitter domain.");
+                                    }
+                        });
+                $("#step2Desc").html("");
+            }
+
+            function getLocalTrends()
+            {
+                var authCode = $("#authCode").val();
+                $.ajax({
+                    url: "trends/",
+                    type: "GET",
+                    data: { "authCode" : authCode },
+                    success: displayResults,
+                    error: function(){
+                                $("#step2Desc").html("something went wrong.. please ensure that you can access the twitter domain.");
+                                }
+                    });
+                $("#secondCol").css({"height": "250px"});
+                $("#step2Desc").html("<img src='{{url_for('static', filename='img/th_loading6.gif')}}' class='loadingImg' />");
+            }
+
+            function displayResults(jsonResult)
+            {
+                $("#secondCol").css({"height": "auto"});
+                $("#step2Desc").html("");
+                //$("#step2Desc").html(jsonResult);
+                jsonResult = JSON.parse(jsonResult);
+                $("#resultsTab").css({display: "block"});
+
+                localTrends = ""
+                for (var i = 0; i < jsonResult["lTrends"].length; i++)
+                {
+                    localTrends += jsonResult["lTrends"][i];
+                    if (i != jsonResult["lTrends"].length - 1)
+                        localTrends += ", ";
+                }
+                $("#localTrends").html(localTrends);
+
+                mentions = ""
+                for (var i = 0; i < jsonResult["mentions"].length; i++)
+                {
+                    mentions += jsonResult["mentions"][i];
+                    if (i != jsonResult["mentions"].length - 1)
+                        mentions += ", ";
+                }
+                $("#topMentions").html(mentions);
+
+                hashtags = ""
+                for (var i = 0; i < jsonResult["hashtags"].length; i++)
+                {
+                    hashtags += jsonResult["hashtags"][i];
+                    if (i != jsonResult["hashtags"].length - 1)
+                        hashtags += ", ";
+                }
+                $("#topHashtags").html(hashtags);
+            }
+        </script>
+    </body>
+</html>

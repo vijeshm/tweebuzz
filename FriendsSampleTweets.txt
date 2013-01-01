@@ -1,0 +1,114 @@
+(lp0
+S'Sunday mornings kick started! :-) :-D (@ The Hole In The Wall Cafe w/ 2 others) http://t.co/6wBJUbbK'
+p1
+aS"#io12 600K+ cores of infrastructure of Google available for developer's apps! :D"
+p2
+aS'#io12 No new #Chromebook release this year.. Maybe postponed to the next year!'
+p3
+aS'#io12 Google nexus 7 tablet.. a powerpack tablet.. with unbeatable processing power.. 16 cores in total.. this is getting crazy!'
+p4
+aS'having a great time! (@ Hard Rock Cafe Bengaluru w/ 2 others) http://t.co/uQ6i60TK'
+p5
+aS'Prahar Mitra makes it to Harvard !!! A hearty congrats to the legendary Physics/Photography prodigy !!!'
+p6
+aS'A Hearty Congrats to our very own Tejaswi for getting placed in Kony Labs. May the dreams of your past become the reality of your future!!!'
+p7
+aS"College goers : Do participate in our Apogee events - Layers, Portfolio and A Life's Picture. Visit http://bit.ly/euuu0e for info & rules"
+p8
+aS'@ni_nad yeah !'
+p9
+aS'@ni_nad Thanks for the mention and thanks for the advice as well :)'
+p10
+aS'@avcInevitable You definitely should, master :P'
+p11
+aS'@musicaldews I can see that. Awesome :D'
+p12
+aS'@phalgun_g :O'
+p13
+aS'@musicaldews you tweet. Good :D'
+p14
+aS'shared a link http://t.co/30FLbEUo'
+p15
+aS"@thoothvaDe What makes you think we're bothered about it? #JustTrolling :P.. You play TT maga?"
+p16
+aS'@discopiggu Congrats :D'
+p17
+aS'@setumad Maxima minima :P'
+p18
+aS'Sir Alex Ferguson not chewing gum #ZOMG #Wimbledon'
+p19
+aS'@sribkain :D @suar4sure'
+p20
+aS'@invicto First lesson as a intern:good software deigners are hard to find but good coders can be obtained easily...'
+p21
+aS"I'm taking Algorithms: Design and Analysis, Part I - a free @coursera online class. Join me and sign up at  http://t.co/VXItrYa4"
+p22
+aS'#Porsche :Porsche...symbol of classic style and performance...  http://t.co/jI8y5WpD'
+p23
+aS"#ItKillsMeWhenPeople It kiils me when people won't listen to wat I m saying..I always hate bad listeners...."
+p24
+aS'#ItKillsMeWhenPeople :My frnd vivek also doesn\'t like it.He says "K.."sounds annoying...but I haven\'t felt like tat any time'
+p25
+aS'compare(x, x-4); http://t.co/L49bLtCq via @wordpressdotcom\n\nBe the change you want to see!'
+p26
+aS'The Story Of Study Holidays http://t.co/jQe65vjB via @wordpressdotcom'
+p27
+aS'http://t.co/iHornzEa'
+p28
+aS"https://t.co/ZEbOZIJV\n'android'ified... !! :)"
+p29
+aS'About http://t.co/opIwLEZC via @wordpressdotcom'
+p30
+aS'check out this site i made :P - trippin.in'
+p31
+aS'This looks good - SkillBonsai\nhttp://t.co/uN6wpKOw via @skillbonsai'
+p32
+aS"@proxymoron_, I'm challenging you on Tweets of Fury. http://t.co/WLWAvncz"
+p33
+aS"a website I'm currently working on\n\nhttp://t.co/nFssPy1X"
+p34
+aS'"The greatest trick the Devil ever pulled was convincing the world he didn\'t exist. And like that, poof. He\'s gone. "'
+p35
+aS'@phalgun_g What about number with +61? Coz i got a call!'
+p36
+aS'@catchmrbharath Finally I see some face here. Hatched Egg =P'
+p37
+aS'Woah! I see something new in Facebook similar to Twitter Trends. #TrendingArticles.'
+p38
+aS'Wireless connects and disconnects every few seconds. Any solution? #Ubuntu11.10 #linux #wifi'
+p39
+aS'@mvvijesh Facepalm! Check out my latest tweet.'
+p40
+aS"Cassowary forms the basis for personalization in @twitter's new autocomplete feature."
+p41
+aS'@aneeshs @amit_twit it doesnt exist in the current version, but you can easily create a new type of edge. How big is your graph approx.?'
+p42
+aS"@nicolastorzec that's correct, and by design, at least in this version."
+p43
+aS'@kturtow no existing class, but simple extension of DirectedGraph...'
+p44
+aS'For those asking, yes, cassovary is a deliberate misspelling. We did not want to get sued by #angrybirds. http://t.co/8sZ2IiF7'
+p45
+aS'Google Insights from CES http://t.co/ijiy4VfZ #cesinsights'
+p46
+aS'A phone? A tablet? Or maybe a "phablet".  Welcome Galaxy Note! #CES2012 http://t.co/MUIQeqMQ'
+p47
+aS'3D Google TV.  Yes please. #CES2012 http://t.co/oNpzfZNh'
+p48
+aS'Schmidt on Next Big Thing: Devices have to be friends http://t.co/FGtY5NCA #CES2012'
+p49
+aS"A waterproof tablet?  It's true.  http://t.co/zeOLydKV #CES"
+p50
+aS'ASONAM 2012 registration form is now available on the web site.'
+p51
+aS"The ASONAM'12 conference committee has applied for TUBITAK 2223 scientific events support. Scholarships will be available pending approval."
+p52
+aS'There was mistake in the deadlines of ASONAM 2012; it has been\nfixed, please notice the new deadlines and mark your calendar\naccordingly.'
+p53
+aS"Paper submission for ASONAM'12 is now open! Please check the website for details: http://t.co/pBA9y4DQ"
+p54
+aS'Venue for the conference is Kadir Has University, Cibali Campus.'
+p55
+aS'hey..............'
+p56
+a.

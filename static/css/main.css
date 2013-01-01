@@ -1,0 +1,86 @@
+#handle
+{
+    display: block;
+    margin: auto;
+}
+
+#submitHandle
+{
+    display: block;
+    margin: auto;
+    width: 30%;  
+}
+
+#continue
+{
+    display: block;
+    margin: auto;
+    width: 30%;  
+}
+
+footer
+{
+    text-align: center;
+}
+
+#authCodeTab
+{
+    display: none;
+}
+
+#authCode
+{
+    margin: auto;
+    display: block;
+}
+
+#resultsTab
+{
+    display: none;
+}
+
+#step1Desc
+{
+    width: 100%;
+    margin: auto;
+}
+
+#step2Desc
+{
+    width: 100%;
+    margin: auto;
+}
+
+#twitterHandleTab
+{
+    display: none;
+}
+
+.loadingImg
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.topic
+{
+    display: block;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.topicDesc
+{
+    margin-left: 55px;
+}
+
+#notifier
+{
+    font-size: 10px;
+}
